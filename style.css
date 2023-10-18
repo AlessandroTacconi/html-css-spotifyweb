@@ -3,3 +3,93 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.flex {
+  display: flex;
+}
+
+/*-------------------------------------------------------
+MAIN - LEFT NAV
+-------------------------------------------------------*/
+
+nav {
+  width: 14.375rem;
+  background-color: black;
+  color: #545454;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 90px);
+  justify-content: space-between;
+  position: fixed;
+}
+
+.logo {
+  background-color: yellow;
+  height: 300px;
+  width: 100%;
+}
+
+.utente {
+  background-color: orange;
+  height: 100px;
+  width: 100%;
+}
+
+/*-------------------------------------------------------
+MAIN - RIGHT SECTION
+-------------------------------------------------------*/
+
+.top {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: calc(100% - 14.375rem);
+  height: 90px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  z-index: 1;
+}
+
+.bottom {
+  background-color: #141922;
+  width: calc(100% - 14.375rem);
+  height: 100%;
+  margin-top: 90px;
+  padding: 1.5625rem;
+  margin-left: 14.375rem;
+  color: white;
+}
+
+/*-------------------------------------------------------
+FOOTER
+-------------------------------------------------------*/
+
+footer {
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  background-color: #282828;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: scroll;
+  z-index: 1;
+}
+.canzone {
+  background-color: aquamarine;
+  width: 14.375rem;
+  height: 100%;
+}
+
+.riproduzione {
+  background-color: blue;
+  height: 100%;
+}
+
+.volume {
+  background-color: purple;
+  width: 14.375rem;
+  height: 100%;
+}
