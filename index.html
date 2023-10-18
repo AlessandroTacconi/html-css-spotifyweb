@@ -19,25 +19,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+
+      <!--MEDIA-->
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
   <body>
     <!--MAIN-->
     <main class="flex">
       <nav class="flex">
         <div class="navigazione">
-          <div><img src="img/logo.svg" alt="logo" class="spotify" /></div>
+          <div class="none"><img src="img/logo.svg" alt="logo" class="spotify" /></div>
           <div>
             <ul>
-              <li><img src="img/home.svg" alt="home" />Home</li>
-              <li><img src="img/search.svg" alt="search" />Cerca</li>
+              <li><img src="img/home.svg" alt="home" /><div class="none">Home</div></li>
+              <li><img src="img/search.svg" alt="search" /><div class="none">Cerca</div></li>
               <li>
-                <img src="img/libreria.svg" alt="libreria" />La tua libreria
+                <img src="img/libreria.svg" alt="libreria" /><div class="none">La tua libreria
+                </div>
               </li>
             </ul>
           </div>
-          <h3>PLAYLIST</h3>
+          <div class="none">   <h3>PLAYLIST</h3>
           <div class="flex playlist">
             <i class="fa-solid fa-square-plus"></i>
             <div>Crea Playlist</div>
@@ -52,17 +57,20 @@
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
-          </ul>
-        </div>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+            <li>Nome Playlist</li>
+          </ul></div>
+        </div> <div></div>
         <div class="utente">
           <div class="flex download">
             <img src="img/download.svg" alt="download">
-            <div>Installa app</div>
+            <div class="none">Installa app</div>
           </div>
-          <hr />
+          <hr / class="none">
            <div class="flex profilo">
             <img src="img/profile.svg" alt="profile">
-            <div>John Doe</div>
+            <div class="none">John Doe</div>
           </div>
         </div>
       </nav>

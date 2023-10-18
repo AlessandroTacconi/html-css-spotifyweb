@@ -20,17 +20,17 @@ nav {
   width: 14.375rem;
   background-color: black;
   color: #545454;
-  flex-direction: column;
-  justify-content: space-between;
   position: fixed;
   padding: 20px 0 90px 20px;
   bottom: 0;
   top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .navigazione {
   width: 100%;
-  max-height: calc(100vh - 190px);
 }
 
 .spotify {
@@ -40,7 +40,7 @@ nav {
 .nome-playlist {
   max-height: 150px;
   overflow: auto;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.5rem;
 }
 
 main ul {
@@ -53,7 +53,6 @@ main ul li {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 0.9375rem;
-  align-items: flex-end;
 }
 
 main ul li img {
@@ -79,9 +78,9 @@ main nav i {
 .utente {
   width: 100%;
   padding-right: 20px;
-  padding-bottom: 1rem;
   gap: 0.625rem;
   font-weight: bold;
+  padding-bottom: 1rem;
 }
 
 .utente img {
@@ -156,4 +155,27 @@ footer {
   background-color: purple;
   width: 14.375rem;
   height: 100%;
+}
+
+/*-------------------------------------------------------
+MEDIA - TABLET
+-------------------------------------------------------*/
+
+/*-------------------------------------------------------
+MEDIA - MOBILE 
+-------------------------------------------------------*/
+
+/*-------------------------------------------------------
+MEDIA - MOBILE SMALL
+-------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {
+  .none {
+    display: none;
+  }
+
+  nav {
+    width: auto;
+    text-align: center;
+  }
 }
