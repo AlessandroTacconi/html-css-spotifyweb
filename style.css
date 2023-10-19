@@ -20,21 +20,21 @@ MAIN - LEFT NAV
 -------------------------------------------------------*/
 
 nav {
-  width: 14.375rem;
   background-color: black;
   color: #545454;
+  padding-top: 20px;
+  bottom: 90px;
   position: fixed;
-  padding: 20px 0 90px 20px;
-  bottom: 0;
-  top: 0;
   left: 0;
+  top: 0;
+  width: 230px;
+  z-index: 3;
 }
 
 .navigazione {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100%;
 }
 
 .spotify {
@@ -43,12 +43,9 @@ nav {
 
 .nome-playlist {
   margin-bottom: 1.5rem;
-  overflow-y: scroll;
   overflow: hidden;
-}
-
-.nome-playlist ul {
   flex-grow: 1;
+  overflow-y: scroll;
 }
 
 main ul {
@@ -117,19 +114,20 @@ MAIN - RIGHT SECTION
 
 .top {
   background-color: rgba(0, 0, 0, 0.9);
-  width: calc(100% - 14.375rem);
   height: 90px;
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   display: flex;
-  z-index: 1;
+  z-index: 0;
   padding: 1.25rem;
+  justify-content: flex-end;
+  display: flex;
 }
 
 .up {
   background-color: rgba(0, 0, 0, 0.8);
-  margin-left: auto;
   border: 5px white solid;
   color: white;
   border-radius: 50px;
@@ -138,12 +136,10 @@ MAIN - RIGHT SECTION
 
 .bottom {
   background-color: #141922;
-  width: calc(100% - 14.375rem);
-  height: 100%;
   margin-top: 90px;
   padding: 1.5625rem;
-  margin-left: 14.375rem;
   color: white;
+  margin-left: 14.375rem;
 }
 
 /*-------------------------------------------------------
@@ -162,22 +158,83 @@ footer {
   justify-content: space-between;
   overflow-y: scroll;
   z-index: 1;
+  color: white;
 }
+
 .canzone {
-  background-color: aquamarine;
-  width: 14.375rem;
+  max-width: 14.375rem;
   height: 100%;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.titolo-album {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.titolo-brano {
+  color: #808080;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+footer .canzone img {
+  max-width: 2.625rem;
+  margin-right: 1rem;
+}
+
+.cartelline {
+  margin-left: auto;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .riproduzione {
-  background-color: blue;
   height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.riptop {
+  justify-content: center;
+  gap: 1.25rem;
+  font-size: 1.375rem;
+  align-items: center;
+}
+
+.fa-circle-play {
+  font-size: 2rem;
+}
+
+.ripbottom {
+  align-items: center;
+  gap: 1.5625rem;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .volume {
-  background-color: purple;
-  width: 14.375rem;
+  max-width: 14.375rem;
   height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 0.75rem;
+}
+
+.riga1 {
+  background-color: lightgray;
+  height: 5px;
+  width: 27.1875rem;
+  border-radius: 50px;
+}
+
+.riga2 {
+  background-color: lightgray;
+  height: 5px;
+  width: 115px;
+  border-radius: 50px;
 }
 
 /*-------------------------------------------------------
@@ -192,7 +249,7 @@ MEDIA - MOBILE
 MEDIA - MOBILE SMALL
 -------------------------------------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   .none {
     display: none;
   }
@@ -201,8 +258,15 @@ MEDIA - MOBILE SMALL
     display: block;
   }
 
+  main nav img {
+    width: 1.75rem;
+  }
+
   nav {
-    width: auto;
-    text-align: center;
+    width: 50px;
+  }
+
+  .bottom {
+    margin-left: 3.125rem;
   }
 }

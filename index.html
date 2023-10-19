@@ -32,7 +32,7 @@
       <nav>
         <div class="navigazione flex">
           <div class="none"><img src="img/logo.svg" alt="logo" class="spotify" /></div>
-          <div class="block none"><img src="img/logo-small.svg" alt=""></div>
+          <div class="block none logo"><img src="img/logo-small.svg" alt=""></div>
           <div>
             <ul>
               <li><img src="img/home.svg" alt="home" /><div class="none">Home</div></li>
@@ -43,13 +43,20 @@
               </li>
             </ul>
           </div>
-          <h3>PLAYLIST</h3>
-          <div class="flex playlist">
+          <h3 class="none">PLAYLIST</h3>
+          <div class="flex playlist none">
             <i class="fa-solid fa-square-plus"></i>
             <div>Crea Playlist</div>
           </div>
-          <div  class="nome-playlist flex">
+          <div  class="nome-playlist flex none">
             <ul>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
+              <li>Nome Playlist</li>
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
@@ -73,8 +80,8 @@
           </div>
         </div>
       </nav>
-      <section><div></div>
-        <div class="top"><button class="up">EFFETTUA L'UPGRADE</b></div>
+      <div class="top"><button class="up">EFFETTUA L'UPGRADE</b></div>
+      <section>
         <div class="bottom">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit,
           possimus! Impedit vel animi, deserunt alias nostrum ullam! Iure
@@ -298,9 +305,37 @@
     </main>
     <!--FOOTER-->
     <footer>
-      <div class="canzone"></div>
-      <div class="riproduzione"></div>
-      <div class="volume"></div>
+      <div class="canzone flex">
+        <div><img src="img/sinister.jpeg" alt="sinister"></div>
+        <div>
+          <div class="titolo-album">Sinister</div>
+          <div class="titolo-brano">brano nome</div>
+        </div>
+        <div class="cartelline flex">
+          <i class="fa-regular fa-heart"></i>
+          <i class="fa-regular fa-folder"></i>
+        </div>
+      </div>
+      <div class="riproduzione flex">
+        <div class="riptop flex">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-rotate-right"></i>
+        </div>
+        <div class="ripbottom flex">
+          <div>0.25</div>
+          <div class="riga1"></div>
+          <div>4.35</div>
+        </div>
+      </div>
+      <div class="volume flex">
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+       <div class="riga2"></div>
+      </div>
     </footer>
   </body>
 </html>
