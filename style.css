@@ -146,7 +146,6 @@ MAIN - RIGHT SECTION
   color: #808080;
   flex-wrap: wrap;
   margin-bottom: 2.875rem;
-  padding: 0 3rem;
 }
 
 .cover-img {
@@ -164,8 +163,16 @@ MAIN - RIGHT SECTION
   gap: 1rem;
 }
 
-.subtle {
+.title {
+  font-weight: bold;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.author {
   margin-bottom: 2.5rem;
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 .round img {
@@ -174,6 +181,11 @@ MAIN - RIGHT SECTION
 
 .sottotitolo {
   margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+h2 {
+  margin-top: 2.5rem;
 }
 
 /*-------------------------------------------------------
@@ -188,7 +200,7 @@ footer {
   left: 0;
   right: 0;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 4;
   color: white;
 }
 
@@ -196,7 +208,7 @@ footer {
   width: 100%;
   height: 100%;
   align-items: center;
-  padding-left: 1rem;
+  margin-left: 1rem;
 }
 
 .titolo-album {
@@ -276,6 +288,52 @@ MEDIA - TABLET 992
   .cover-img {
     max-width: calc((100% / 4) - 1rem);
   }
+
+  .menu {
+    padding: 0 3rem;
+  }
+
+  .canzone {
+    width: 13.4375rem;
+    margin-left: 1rem;
+  }
+
+  .riproduzione {
+    width: 20.3125rem;
+  }
+
+  .volume {
+    width: 13.125rem;
+  }
+
+  footer .canzone img {
+    margin-right: 0.625rem;
+  }
+
+  .cartelline {
+    gap: 0.5rem;
+    margin-left: 2.8125rem;
+  }
+
+  .riptop {
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.375rem;
+  }
+
+  .fa-circle-play {
+    font-size: 1.5rem;
+  }
+
+  .ripbottom {
+    gap: 0.625rem;
+    font-size: 0.75rem;
+  }
+
+  .volume {
+    margin-right: 0.625rem;
+    gap: 1rem;
+  }
 }
 /*-------------------------------------------------------
 MEDIA - MOBILE 768
@@ -284,6 +342,52 @@ MEDIA - MOBILE 768
 @media screen and (max-width: 768px) {
   .cover-img {
     max-width: calc((100% / 2) - 1rem);
+  }
+
+  .menu {
+    padding: 0 1rem;
+  }
+
+  .canzone {
+    width: 10;
+    margin-left: 1rem;
+  }
+
+  .riproduzione {
+    width: 13.5rem;
+  }
+
+  .volume {
+    width: 11.875rem;
+  }
+
+  footer .canzone img {
+    margin-right: 0.625rem;
+  }
+
+  .cartelline {
+    gap: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .riptop {
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.375rem;
+  }
+
+  .fa-circle-play {
+    font-size: 1.5rem;
+  }
+
+  .ripbottom {
+    gap: 0.625rem;
+    font-size: 0.75rem;
+  }
+
+  .volume {
+    margin-right: 0.625rem;
+    gap: 1rem;
   }
 }
 /*-------------------------------------------------------
@@ -305,6 +409,37 @@ MEDIA - MOBILE SMALL 576
 
   nav {
     width: 50px;
+    padding-left: 0;
+  }
+
+  .navigazione {
+    align-items: center;
+  }
+
+  .utente {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .utente img {
+    margin-right: 0;
+  }
+
+  .utente hr {
+    margin: 12px 0;
+  }
+
+  .download {
+    margin-bottom: 24px;
+  }
+
+  .download,
+  .profilo {
+    justify-content: center;
+  }
+
+  .menu {
+    padding: 0 1rem;
   }
 
   .bottom {
@@ -317,6 +452,7 @@ MEDIA - MOBILE SMALL 576
 
   .canzone {
     width: 8.125rem;
+    margin-left: 0.625rem;
   }
 
   .riproduzione {
@@ -325,5 +461,34 @@ MEDIA - MOBILE SMALL 576
 
   .volume {
     width: 10rem;
+  }
+
+  footer .canzone img {
+    margin-right: 0.625rem;
+  }
+
+  .cartelline {
+    gap: 0.5rem;
+    margin-left: 0.75rem;
+  }
+
+  .riptop {
+    justify-content: center;
+    gap: 0.625rem;
+    font-size: 1.375rem;
+  }
+
+  .fa-circle-play {
+    font-size: 1.375rem;
+  }
+
+  .ripbottom {
+    gap: 0.3125rem;
+    font-size: 0.75rem;
+  }
+
+  .volume {
+    margin-right: 0.625rem;
+    gap: 0.4375rem;
   }
 }
