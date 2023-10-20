@@ -29,6 +29,7 @@ nav {
   top: 0;
   width: 230px;
   z-index: 3;
+  padding-left: 1.25rem;
 }
 
 .navigazione {
@@ -60,7 +61,7 @@ main ul li {
   margin-bottom: 0.9375rem;
 }
 
-main ul li img {
+main nav ul li img {
   width: 1.5rem;
 }
 
@@ -136,10 +137,30 @@ MAIN - RIGHT SECTION
 
 .bottom {
   background-color: #141922;
-  margin-top: 90px;
-  padding: 1.5625rem;
   color: white;
-  margin-left: 14.375rem;
+  padding: 1.25rem 1.5rem;
+  margin: 5.625rem 0 5.625rem 14.375rem;
+  max-width: calc(100vw - 14.375rem);
+}
+
+.menu {
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #808080;
+  flex-wrap: wrap;
+  margin-bottom: 2.875rem;
+}
+
+.cover-img {
+  max-width: calc((100vw / 6) - 1rem);
+}
+
+.cover {
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
 }
 
 /*-------------------------------------------------------
@@ -221,6 +242,7 @@ footer .canzone img {
   align-items: center;
   justify-content: space-around;
   margin-right: 0.75rem;
+  gap: 1rem;
 }
 
 .riga1 {
@@ -268,5 +290,8 @@ MEDIA - MOBILE SMALL
 
   .bottom {
     margin-left: 3.125rem;
+  }
+  .cover {
+    flex-wrap: wrap;
   }
 }
